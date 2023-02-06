@@ -1,0 +1,38 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu113"
+verify_ssl = true
+name = "downloadpytorch"
+
+[packages]
+torch = "*"
+torchvision = "*"
+torchaudio = "*"
+matplotlib = "*"
+transformers = {version = "==4.11.3", extras = ["onnxruntime", "optuna", "sentencepiece", "sklearn", "tf", "torch", "vision"]}
+datasets = {version = "==1.16.1", extras = ["audio"]}
+ipywidgets = "*"
+umap-learn = "==0.5.1"
+bertviz = "==1.2.0"
+seqeval = "==1.2.2"
+nltk = "==3.6.6"
+sacrebleu = "==1.5.1"
+rouge-score = "==0.0.4"
+py7zr = "*"
+nlpaug = "==1.1.7"
+scikit-multilearn = "==0.2.0"
+psutil = "*"
+accelerate = "==0.5.1"
+
+[dev-packages]
+pre-commit = "*"
+flake8 = "*"
+autopep8 = "*"
+black = "*"
+
+[requires]
+python_version = "3.9"
